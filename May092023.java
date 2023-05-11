@@ -6,9 +6,7 @@ public class May092023 {
     public static void main(String[] args) {
 
     }
-}
 
-class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> res = new ArrayList<Integer>();
         int startRow =0;
@@ -47,3 +45,4 @@ class Solution {
         return res;
     }
 }
+
