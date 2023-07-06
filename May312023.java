@@ -1,3 +1,7 @@
+import javafx.util.Pair;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class May312023 {
 
@@ -6,6 +10,7 @@ public class May312023 {
     }
 
     class UndergroundSystem {
+
         private Map<Integer, Pair<String, Integer>> checkIns = new HashMap<>();
         private Map<Pair<String, String>, int[]> times = new HashMap<>();
 
