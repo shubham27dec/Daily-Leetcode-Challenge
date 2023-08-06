@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class August052023 {
@@ -7,33 +6,29 @@ public class August052023 {
 
     }
     class Solution {
-        Map<Pair<Integer, Integer>, List<TreeNode>> dp;
         public List<TreeNode> generateTrees(int n) {
-            dp = new HashMap<>();
-            return helper(1, n);
+            List<TreeNode>[][] dp = new List[n + 1][n + 1];
+            return f(1, n, dp);
         }
+        private List<TreeNode> f(int low, int high, List<TreeNode>[][] dp){
+            List<TreeNode> bst = new ArrayList<>();
+            if (low > high){
+                bst.add(null);
+                return bst;
+            }
+            if (dp[low][high] != null)
+                return dp[low][high];
 
-        public List<TreeNode> helper(int start, int end) {
-            List<TreeNode> variations = new ArrayList<>();
-            if (start > end) {
-                variations.add(null);
-                return variations;
-            }
-            if (dp.containsKey(new Pair<>(start, end))) {
-                return dp.get(new Pair<>(start, end));
-            }
-            for (int i = start; i <= end; ++i) {
-                List<TreeNode> leftSubTrees = helper(start, i - 1);
-                List<TreeNode> rightSubTrees = helper(i + 1, end);
-                for (TreeNode left: leftSubTrees) {
-                    for (TreeNode right: rightSubTrees) {
-                        TreeNode root = new TreeNode(i, left, right);
-                        variations.add(root);
+            for (int i = low; i <= high; i++){
+                List<TreeNode> leftSubTree = f(low, i - 1, dp);
+                List<TreeNode> rightSubTree = f(i + 1, high, dp);
+                for (TreeNode left : leftSubTree){
+                    for (TreeNode right : rightSubTree){
+                        bst.add(new TreeNode(i, left, right));
                     }
                 }
             }
-            dp.put(new Pair<>(start, end), variations);
-            return variations;
+            return dp[low][high] = bst;
         }
     }
 }
