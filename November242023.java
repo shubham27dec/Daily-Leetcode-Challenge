@@ -9,7 +9,7 @@ public class November242023 {
             Arrays.sort(piles);
             int coins = 0;
             int passes = 0;
-            for(int i=piles.length-2; i>0+passes++;i-=2){
+            for(int i=piles.length-2; i>passes++;i-=2){
                 coins += piles[i];
             }
             return coins;
