@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class January102023 {
+public class January102024 {
     public static void main(String[] args) {
 
     }

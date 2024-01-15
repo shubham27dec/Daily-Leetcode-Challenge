@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class January092023 {
+public class January092024 {
     public static void main(String[] args) {
 
     }

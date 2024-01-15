@@ -1,4 +1,4 @@
-public class January112023 {
+public class January112024 {
     public static void main(String[] args) {
 
     }

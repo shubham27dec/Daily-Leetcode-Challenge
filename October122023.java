@@ -9,6 +9,7 @@ public class October122023 {
      */
 
     class Solution {
+        /*
         public int findInMountainArray(int target, MountainArray mountainArr) {
             int peak=findPeak(mountainArr);
             int searchAsc = orderAgnosticBS(mountainArr,target, 0, peak);
@@ -47,5 +48,6 @@ public class October122023 {
             }
             return -1;
         }
+         */
     }
 }
