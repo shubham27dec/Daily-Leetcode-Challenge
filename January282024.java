@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class January282023 {
+public class January282024 {
     public static void main(String[] args) {
 
     }
