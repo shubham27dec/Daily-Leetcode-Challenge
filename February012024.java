@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Febraury012024 {
+public class February012024 {
     public static void main(String[] args) {
 
     }

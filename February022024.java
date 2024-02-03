@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Febraury022024 {
+public class February022024 {
     public static void main(String[] args) {
 
     }
