@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Augut162024 {
+public class August162024 {
     public static void main(String[] args) {
 
     }
