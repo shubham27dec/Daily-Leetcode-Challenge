@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class September182024 {
     public static void main(String[] args) {
 
@@ -8,7 +10,7 @@ public class September182024 {
             for(int i=0; i<nums.length; i++){
                 strings[i] = String.valueOf(nums[i]);
             }
-            Arrays.sort(strings,(b,a)->(a+b).compareTo(b+a));
+            Arrays.sort(strings,(b, a)->(a+b).compareTo(b+a));
             StringBuilder sb = new StringBuilder();
             for(String str : strings){
                 sb.append(str);
